@@ -23,36 +23,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/urlInput"
         android:layout_width="214dp"
         android:layout_height="48dp"
         android:layout_marginTop="168dp"
-        android:fontFamily="sans-serif-light"
-        android:hint="Название книги"
-        android:textAlignment="center"
+        android:singleLine="true"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSearch"
         android:layout_width="148dp"
         android:layout_height="48dp"
         android:layout_marginBottom="520dp"
         android:background="@drawable/gradientbutton"
         android:text="Search"
-        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.939"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#5895FF"
-        app:strokeWidth="1dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
