@@ -11,42 +11,66 @@
         android:id="@+id/tvTitle"
         android:layout_width="265dp"
         android:layout_height="69dp"
-        android:layout_marginTop="40dp"
         android:fontFamily="casual"
         android:text="BoaSF"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/urlInput"
-        android:layout_width="214dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="168dp"
-        android:singleLine="true"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
 
     <Button
         android:id="@+id/buttonSearch"
         android:layout_width="148dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="520dp"
         android:background="@drawable/gradientbutton"
-        android:text="Search"
+        android:text="Поиск"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.939"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/bookInput"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="160dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="356dp"
+        android:layout_height="457dp"
+        android:background="@drawable/gradientscroll"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946">
+
+        <LinearLayout
+            android:id="@+id/Lay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
